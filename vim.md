@@ -108,7 +108,7 @@ Ctrl-W switch from the terminal to the next window
 
 ### Vim-Fugitive
 ```vim
-:Git add {args}
+:Git add
 :Gcommit {args}
 :Gpush
 ```
