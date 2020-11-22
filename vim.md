@@ -111,4 +111,5 @@ Ctrl-W switch from the terminal to the next window
 :Git add {args}
 :Gcommit {args}
 :Gpush
+:Gstatus
 ```
