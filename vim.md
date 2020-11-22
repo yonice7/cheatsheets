@@ -70,15 +70,13 @@ Shift + ZZ # Saving and Exit
 Shift + ZQ # Exit without saving
 ```
 ## Easymotion
-space + s + dos characters 
+space + s + two characters 
 
 ## Nerdtree directory
-space+nt #open
-open a new file in a new tab
-s
-" pointer over file a press:
-s
-
+```python
+space+nt # open
+s # open a new file in a new tab
+```
 ## Navigate between tabs tmux
 Ctrl + hjkl
 
@@ -99,5 +97,5 @@ s:^vi\>:VIM:
 :%s/^$/\<br\/\>/g # replace empty line with brake
 Ctrl + A increment a number
 ```
-##  Moverse por numeros, seis espacios hacia arriba
+## Moving within the document 
 6k
