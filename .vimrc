@@ -286,9 +286,8 @@ nmap <Leader>nt :NERDTreeFind<CR>
 
 let g:airline_powerline_fonts = 1
 " GoTo code navigation.
-" Enable smarter tabline
-let g:airline#extensions#tabline#enabled = 1
 
+" Python
 let g:python_highlight_all = 1
 
 nmap <silent> gd <Plug>(coc-definition)
@@ -298,5 +297,6 @@ nmap <silent> gr <Plug>(coc-references)
 " Use ii instead of Esc
 :imap ii <Esc>
 
+" JavaScript
 let g:javascript_plugin_jsdoc = 1
 let g:javascript_plugin_ngdoc = 1
