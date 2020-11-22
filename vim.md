@@ -6,20 +6,20 @@
 - seoul256.vim
 - deciduous_tree Low-contrast Vim color scheme based on Seoul Colors
 
-
 ## Plugin
 ```vim
 command-line fuzzy funder " Colorear correctamente codigo vim
 coc " conquer of completion
 vim-airline
 ```
-## hjkl
+## Commands
+hjkl
 ```vim
 d " del
 i " write
 a " append
 ```
-## Deleting
+### Deleting
 ```vim
 d " Always expect the next letter
 dw " delete word
@@ -31,14 +31,14 @@ dd " Delete a whole line
 u " undo
 U " Line original state
 ```
-## Copying and pasting
+### Copying and pasting
 ```vim
 yy " yank
 p " paste
 Ctrl-r + " pasting in the command line
 "+y " Copy to the clipboard
 ```
-## Moving
+### Moving
 ```vim
 w " Start of the word
 e " end of the word
@@ -63,28 +63,28 @@ G last
 gg first line
 numG go to that line number
 ```
-## Saving
+### Saving
 ```vim
 :w Filename saves as
 Shift + ZZ " Saving and Exit
 Shift + ZQ " Exit without saving
 ```
-## Easymotion
+### Easymotion
 space + s + two characters 
 
-## Nerdtree directory
+### Nerdtree directory
 ```vim
 space+nt " open
 s " open a new file in a new tab
 ```
-## Navigate between tabs tmux
+### Navigate between tabs tmux
 Ctrl + hjkl
 
-## Substituing
+### Substituing
 to avoid replacing words we don't want to be replaced
 s: vi : VIM : g 
 
-### better way
+#### better way
 ```vim
 s:\<vi\>:VIM:g
 ^ Beginning of the line
@@ -97,5 +97,18 @@ s:^vi\>:VIM:
 :%s/^$/\<br\/\>/g " replace empty line with brake
 Ctrl + A increment a number
 ```
-## Moving within the document 
+### Moving within the document 
 6k
+
+### Terminal
+```vim 
+:vert ter
+Ctrl-W switch from the terminal to the next window
+```
+
+### Vim-Fugitive
+```vim
+:Git add {args}
+:Gcommit {args}
+:Gpush
+```
