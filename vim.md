@@ -6,8 +6,6 @@
 - seoul256.vim
 - deciduous_tree Low-contrast Vim color scheme based on Seoul Colors
 
-set nolist
-set nu
 
 ## Plugin
 ```python
@@ -15,7 +13,7 @@ command-line fuzzy funder # Colorear correctamente codigo python
 coc # conquer of completion
 vim-airline
 ```
-hjkl
+## hjkl
 ```python
 d # del
 i # write
@@ -81,7 +79,7 @@ s
 " pointer over file a press:
 s
 
-## Navigate on tabs tmux
+## Navigate between tabs tmux
 Ctrl + hjkl
 
 ## Substituing
