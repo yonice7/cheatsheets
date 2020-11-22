@@ -1,28 +1,28 @@
 ## Themes
-darkcloud-vimconfig
-miramare
-:maple_leaf:Comfortable & Pleasant Color Scheme for VIM
-vim-gruvbox8
-seoul256.vim
-:deciduous_tree: Low-contrast Vim color scheme based on Seoul Colors
+- darkcloud-vimconfig
+- miramare
+- maple_leaf Comfortable & Pleasant Color Scheme for VIM
+- vim-gruvbox8
+- seoul256.vim
+- deciduous_tree Low-contrast Vim color scheme based on Seoul Colors
 
 set nolist
 set nu
 
 ## Plugin
-`python
+```python
 command-line fuzzy funder # Colorear correctamente codigo python
 coc # conquer of completion
-vim-airline`
-
+vim-airline
+```
 hjkl
-`python
+```python
 d # del
 i # write
-a # append`
-
+a # append
+```
 ## Deleting
-`python
+```python
 d # Always expect the next letter
 dw # delete word
 de # Delete to the end of the current word
@@ -31,17 +31,17 @@ db # Delete everything behind
 dd # Delete a whole line
 2dd # Delete 2 lines
 u # undo
-U # Line original state`
-
+U # Line original state
+```
 ## Copying and pasting
-`python
+```python
 yy # yank
 p # paste
 Ctrl-r + # pasting in the command line
-"+y # Copy to the clipboard`
-
+"+y # Copy to the clipboard
+```
 ## Moving
-`python
+```python
 w # Start of the word
 e # end of the word
 b # Backward to the start of the word
@@ -63,14 +63,14 @@ Ctrl+o # go back with cursor
 Ctrl+G # Location
 G last
 gg first line
-numG go to that line number`
-
+numG go to that line number
+```
 ## Saving
-`python
+```python
 :w Filename saves as
 Shift + ZZ # Saving and Exit
-Shift + ZQ # Exit without saving`
-
+Shift + ZQ # Exit without saving
+```
 ## Easymotion
 space + s + dos characters 
 
@@ -89,7 +89,7 @@ to avoid replacing words we don't want to be replaced
 s: vi : VIM : g 
 
 ### better way
-`python
+```python
 s:\<vi\>:VIM:g
 ^ Beginning of the line
 $ End of the line
@@ -99,7 +99,7 @@ s:^vi\>:VIM:
 & replace with the same word and parenthesis
 :%s/foo.*/&/g until the end of the line
 :%s/^$/\<br\/\>/g # replace empty line with brake
-Ctrl + A increment a number`
-
+Ctrl + A increment a number
+```
 ##  Moverse por numeros, seis espacios hacia arriba
 6k
