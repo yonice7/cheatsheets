@@ -286,6 +286,8 @@ nmap <Leader>nt :NERDTreeFind<CR>
 
 let g:airline_powerline_fonts = 1
 " GoTo code navigation.
+" Enable smarter tabline
+let g:airline#extensions#tabline#enabled = 1
 
 let g:python_highlight_all = 1
 
