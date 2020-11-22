@@ -16,3 +16,22 @@ Then after installing the fonts, you just set the theme by editing your`~/.bashr
 ```shell
 OSH_THEME="powerline"
 ```
+## Using Fugitive for Vim
+### Installing and Config
+```shell
+mkdir -p ~/.vim/pack/tpope/start
+cd ~/.vim/pack/tpope/start
+git clone https://tpope.io/vim/fugitive.git
+vim -u NONE -c "helptags fugitive/doc" -c q
+```
+### Credentials catching
+Turn on the credential helper so that Git will save your password in memory for some time. By default, Git will cache your password for 15 minutes.
+```shell
+git config --global credential.helper cache
+# Set git to use the credential memory cache
+```
+To change the default password cache timeout, enter the following:
+```shell
+git config --global credential.helper 'cache --timeout=3600'
+# Set the cache to timeout after 1 hour (setting is in seconds)
+```
