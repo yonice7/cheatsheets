@@ -18,8 +18,13 @@ read name # creates a variable
 echo "Welcome $name" # prints a message + variable
 mv old_name new_name # renaming a file
 ((...)) # means perfrom arithmetic and return the result of the calculation
+((...)) # we can also use them to perform, booleans statements
 \* # If we want to use * as multiplyer, there has to be a \ before it.
 {} # List are in braces and separated by commans , with no spaces i.e {+,-,\*,/}
+&& # "and" statement
+
+# Statementes
+if condition; then echo output; elif condition; then echo output; else echo output; fi
 
 Ctrl + D
 Alt + D
