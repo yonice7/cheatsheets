@@ -59,7 +59,7 @@ Ctrl+o " go back with cursor
 ?word " last word that matches
 % parenthesis match
 Ctrl+G " Location
-G last
+G " last line
 gg first line
 numG go to that line number
 ```
@@ -75,7 +75,9 @@ space + s + two characters
 ### Nerdtree directory
 ```vim
 space+nt " open
-s " open a new file in a new tab
+s " open a new file in a new window 
+t " open a file in a t tab
+gt " move between tabs
 ```
 ### Navigate between tabs tmux
 Ctrl + hjkl
