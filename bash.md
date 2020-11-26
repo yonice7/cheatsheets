@@ -24,6 +24,14 @@ cd ~/.vim/pack/tpope/start
 git clone https://tpope.io/vim/fugitive.git
 vim -u NONE -c "helptags fugitive/doc" -c q
 ```
+## Using Vim-Gitgutter
+### Installing
+```shell
+mkdir -p ~/.vim/pack/airblade/start
+cd ~/.vim/pack/airblade/start
+git clone https://github.com/airblade/vim-gitgutter.git
+vim -u NONE -c "helptags vim-gitgutter/doc" -c q
+```
 ### Credentials catching
 Turn on the credential helper so that Git will save your password in memory for some time. By default, Git will cache your password for 15 minutes.
 ```shell
