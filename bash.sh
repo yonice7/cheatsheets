@@ -19,6 +19,8 @@ echo "Welcome $name" # prints a message + variable
 mv old_name new_name # renaming a file
 ((...)) # means perfrom arithmetic and return the result of the calculation
 ((...)) # we can also use them to perform, booleans statements
+[[...]] # They are keywords, they allow us to use special parsing rules. Such as ||, (), &&, <, >, ==, !=
+$c == [Yy] # It is like 'in "Yy"' in Python
 \* # If we want to use * as multiplyer, there has to be a \ before it.
 {} # List are in braces and separated by commans , with no spaces i.e {+,-,\*,/}
 && # "and" statement
