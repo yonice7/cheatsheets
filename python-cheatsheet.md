@@ -78,6 +78,7 @@ sorted()
 zip()
 min()
 max()
+sorted() # Sorts a list, from low to high, for high to low -> sorted([list], reverse = True)
 from random import suffle
 shuffle()
 randint()
