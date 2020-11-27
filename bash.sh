@@ -14,6 +14,9 @@ $x # print a variable
 [1#5] # range in the character wildcard
 echo ${Var:4:4} # string indentation range
 echo ${var:6} # string indentation from, we start from 0
+printf "%.3f\n" # Print a floating point and round it nf, it goes before what you want to print
+$(echo $i | bc -l) # We pass an operations string such as "(3 + 5) * 5 / 4" and operations will be performed
+| bc -l # If bc is invoked with the -l option, a math library is preloaded 
 read name # creates a variable
 echo "Welcome $name" # prints a message + variable
 mv old_name new_name # renaming a file
