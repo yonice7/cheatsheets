@@ -5,3 +5,5 @@
 [![vimcheatsheet](https://img.shields.io/badge/vim_cheatsheet-004919?&style=for-the-badge&logo=vim&logocolor=white)](https://github.com/joisaac/cheatsheets/blob/main/vim.md)<br/>
 [![bash](https://img.shields.io/badge/bash_style-000000?&style=for-the-badge&logo=gnu-bash&logocolor=white)](https://github.com/joisaac/cheatsheets/blob/main/bash.md)<br/>
 [![bashcheatsheet](https://img.shields.io/badge/bash_cheatsheet-000000?&style=for-the-badge&logo=gnu-bash&logocolor=white)](https://github.com/joisaac/cheatsheets/blob/main/bash.sh)
+## SQL
+[![sqlcheatsheet](https://img.shields.io/badge/sql_cheatsheet-336791?&style=for-the-badge&logo=postgresql&logocolor=white)](https://github.com/joisaac/cheatsheets/blob/main/sql.md)
