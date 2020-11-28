@@ -28,6 +28,8 @@ d$ " Delete everything forward until that point
 db " Delete everything behind
 dd " Delete a whole line
 2dd " Delete 2 lines
+df{char} " Delete until character
+. " Repeat last process
 u " undo
 U " Line original state
 ```
@@ -56,6 +58,7 @@ Ctrl+t " indent
 Ctrl+d " de-indent
 Ctrl+o " go back with cursor
 /word " look for word, then n to go to the next, N back
+n " Find the next one
 ?word " last word that matches
 % parenthesis match
 Ctrl+G " Location
@@ -83,8 +86,13 @@ gt " move between tabs
 Ctrl + hjkl
 
 ### Substituing
+```vim
 to avoid replacing words we don't want to be replaced
 s: vi : VIM : g 
+r + {char} " replace one character with another
+~ # Replace a lower case character with the same character uppercased 
+CTRL-a "Increment a number
+```
 
 #### better way
 ```vim
@@ -100,7 +108,9 @@ s:^vi\>:VIM:
 Ctrl + A increment a number
 ```
 ### Moving within the document 
+```vim
 6k
+g CTRL-g " Count document words
 
 ### Terminal
 ```vim 
