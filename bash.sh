@@ -28,6 +28,13 @@ $c == [Yy] # It is like 'in "Yy"' in Python
 {} # List are in braces and separated by commans , with no spaces i.e {+,-,\*,/}
 && # "and" statement
 
+# cut
+echo '0000 192.168.1.100 192.168.100.1' |cut -d ' ' -f 2 |cut -d '.' -f 4|cut -c 1
+-d # flag set the delimiter, space in this case
+-f # flag shows column to return, 2. The column starts at 1
+-c # it is used to extract the first character from the results of the second command
+cut # it works on every line so it's not necessary to perform a loop, -d 'Tab' is the default delimiter
+
 # Statementes
 if condition; then echo output; elif condition; then echo output; else echo output; fi
 
