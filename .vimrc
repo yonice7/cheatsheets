@@ -94,15 +94,9 @@ set shortmess+=c
 
 " For coc autoselect
 set completeopt=noinsert,noselect,menuone
-
-" Always show the signcolumn, otherwise it would shift the text each time
-" diagnostics appear/become resolved.
-if has("patch-8.1.1564")
-  " Recently vim can merge signcolumn and number column into one
-  set signcolumn=number
-else
-  set signcolumn=yes
-endif
+" Recently vim can merge signcolumn and number column into one
+set signcolumn=number
+set signcolumn=yes
 
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
@@ -286,6 +280,8 @@ nmap <Leader>nt :NERDTreeFind<CR>
 
 let g:airline_powerline_fonts = 1
 " GoTo code navigation.
+" Enable smarter tabline
+let g:airline#extensions#tabline#enabled = 1
 
 " Python
 let g:python_highlight_all = 1
