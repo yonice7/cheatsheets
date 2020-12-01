@@ -39,6 +39,24 @@ echo '0000 192.168.1.100 192.168.100.1' |cut -d ' ' -f 2 |cut -d '.' -f 4|cut -c
 -c # it is used to extract the first character from the results of the second command
 cut # it works on every line so it's not necessary to perform a loop, -d 'Tab' is the default delimiter
 
+# head
+head -n num # Get the first n lines
+tail num # Get the last n lines
+head -c num # Get the first n characters
+head -22 | tail +12 # Get a range of lines
+
+# tr
+tr "()" "[]" # Replace one with other
+tr -d a-z # Delete the range a character input
+tr -s # Replace spaces
+
+# sort
+-r # Reverse the order
+-n # Sort by number
+-t # Set the field separator
+-knum,num # Sort by column starting from num and ending in num
+-t $'\t' + more arguments # Sort every row
+
 # Statementes
 if condition; then echo output; elif condition; then echo output; else echo output; fi
 
