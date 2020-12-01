@@ -58,6 +58,9 @@ tr -s # Replace spaces
 -t $'\t' + more arguments # Sort every row
 -nrk2 # Sort a row by number, descending and from column 2
 
+# uniq
+-c # Counts repeated words
+
 # Statementes
 if condition; then echo output; elif condition; then echo output; else echo output; fi
 
