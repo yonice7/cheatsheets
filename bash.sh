@@ -56,6 +56,7 @@ tr -s # Replace spaces
 -t # Set the field separator
 -knum,num # Sort by column starting from num and ending in num
 -t $'\t' + more arguments # Sort every row
+-nrk2 # Sort a row by number, descending and from column 2
 
 # Statementes
 if condition; then echo output; elif condition; then echo output; else echo output; fi
