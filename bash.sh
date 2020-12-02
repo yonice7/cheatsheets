@@ -32,6 +32,7 @@ arr=${arr[*]} # render a new variable of type string from the merging of the arr
 arr=${arr// /+} # changing to [1+2+3+4+5+6]
 arr=$((READY_TO_SUM)) # summation result
 arr[@]:3:5 # Indexing, :index position:number of values forward
+arr[@]/*[Aa]*/ # Regular expression to ommit words having a or 
 
 # cut
 echo '0000 192.168.1.100 192.168.100.1' |cut -d ' ' -f 2 |cut -d '.' -f 4|cut -c 1
@@ -70,7 +71,7 @@ paste -d, -s # Sets a comma as delimiter
 # Statementes
 if condition; then echo output; elif condition; then echo output; else echo output; fi
 
-Ctrl + D
+Ctrl + D # Save and exit after cat command
 Alt + D
 Ctrl + A or Home # Go to the beginning of the line
 Ctrl + E or End # Go to the end of the line
