@@ -31,7 +31,8 @@ arr=($(cat)) # reads in an array [1,2,3,4]
 arr=${arr[*]} # render a new variable of type string from the merging of the array arr delimited by space, i.e., from [1,3,5,6] to "1 3 5 6"
 arr=${arr// /+} # changing to [1+2+3+4+5+6]
 arr=$((READY_TO_SUM)) # summation result
- 
+arr[@]:3:5 # Indexing, :index position:number of values forward
+
 # cut
 echo '0000 192.168.1.100 192.168.100.1' |cut -d ' ' -f 2 |cut -d '.' -f 4|cut -c 1
 -d # flag set the delimiter, space in this case
@@ -60,6 +61,11 @@ tr -s # Replace spaces
 
 # uniq
 -c # Counts repeated words
+
+# paste
+paste -s # From words divided by tabs in a column to words divided by spaces in a row
+paste - - - # Divide the words in 3 columns
+paste -d, -s # Sets a comma as delimiter
 
 # Statementes
 if condition; then echo output; elif condition; then echo output; else echo output; fi
