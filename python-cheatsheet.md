@@ -58,6 +58,11 @@ print(f'String {var!r}') #String representation
 print('String {0:spaces.decimalsf}'.format('var')
 print(f'String {var:{spaces}.{numbers}')
 print(f'String {var:spaces.decimalsf}')
+print(f"{var:sd} # Print in decimal
+print(f"{var:so} # Print in octal
+print(f"{var:sx} # Print in hexadecimal
+print(f"{var:sb} # Print in binary
+
 ```
 
 ### Dict {}
