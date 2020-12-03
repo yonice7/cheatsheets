@@ -33,6 +33,9 @@ arr=${arr// /+} # changing to [1+2+3+4+5+6]
 arr=$((READY_TO_SUM)) # summation result
 arr[@]:3:5 # Indexing, :index position:number of values forward
 arr[@]/*[Aa]*/ # Regular expression to ommit words having a or 
+arr[@]/[[:upper:]]/. # Replace space for a dot
+${arr[3]} # Index printing
+${#arr[@]} # Print the count of values "#"
 
 # cut
 echo '0000 192.168.1.100 192.168.100.1' |cut -d ' ' -f 2 |cut -d '.' -f 4|cut -c 1
