@@ -105,7 +105,7 @@ s:^vi\>:VIM:
 & replace with the same word and parenthesis
 :%s/foo.*/&/g until the end of the line
 :%s/^$/\<br\/\>/g " replace empty line with brake
-:%s/\%>9l\%<21word " replace from line number 9 to line number 21
+:%s/\%>9l\%<21lword " replace from line number 9 to line number 21
 Ctrl + A increment a number
 ```
 ### Moving within the document 
