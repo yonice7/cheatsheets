@@ -62,7 +62,6 @@ print(f"{var:sd} # Print in decimal
 print(f"{var:so} # Print in octal
 print(f"{var:sx} # Print in hexadecimal
 print(f"{var:sb} # Print in binary
-
 ```
 
 ### Dict {}
