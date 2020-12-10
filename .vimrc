@@ -6,6 +6,7 @@ set rnu
 set ruler
 set mouse=a
 set clipboard=unnamed
+set termguicolors
 " Helps force plug-ins to load correctly when it is turned back on below.
 filetype off
 
@@ -54,9 +55,8 @@ set matchpairs+=<:>
 
 " Show line numbers
 set number
-
-" Set status line display
-set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ [BUFFER=%n]\ %{strftime('%c')}
+" Highlight current line
+set cursorline
 
 " Encoding
 set encoding=utf-8
@@ -95,7 +95,6 @@ set shortmess+=c
 " For coc autoselect
 set completeopt=noinsert,noselect,menuone
 " Recently vim can merge signcolumn and number column into one
-set signcolumn=number
 set signcolumn=yes
 
 " Use tab for trigger completion with characters ahead and navigate.
@@ -206,7 +205,7 @@ command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organize
 " Add (Neo)Vim's native statusline support.
 " NOTE: Please see `:h coc-status` for integrations with external plugins that
 " provide custom statusline: lightline.vim, vim-airline.
-set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+" set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 " Mappings for CoCList
 " Show all diagnostics.
@@ -251,6 +250,7 @@ call plug#begin('~/.vim/plugged')
 " Themes
 Plug 'morhetz/gruvbox'
 Plug 'franbach/miramare'
+Plug 'chriskempson/base16-vim'
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -259,6 +259,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'neoclide/coc.nvim' , { 'branch' : 'release' }
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-scripts/indentpython.vim'
 Plug 'vim-python/python-syntax'
 Plug 'pangloss/vim-javascript' "JavaScript support
@@ -269,7 +270,7 @@ call plug#end()
 
 colorscheme gruvbox
 set background=dark
-" let g:gruvbox_constrast_dark = "hard"
+let g:gruvbox_constrast_dark = "hard"
 " Closes nerdtree when open a file from it
 let NERDTreeQuitOnOpen=1
 
@@ -282,6 +283,17 @@ let g:airline_powerline_fonts = 1
 " GoTo code navigation.
 " Enable smarter tabline
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#enabled = 2
+let g:airline#extensions#tabline#fnamemod = ':t'
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#right_sep = ' '
+let g:airline#extensions#tabline#right_alt_sep = '|'
+let g:airline_left_sep = ' '
+let g:airline_left_alt_sep = '|'
+let g:airline_right_sep = ' '
+let g:airline_right_alt_sep = '|'
+let g:airline_theme= 'gruvbox'
 
 " Python
 let g:python_highlight_all = 1
