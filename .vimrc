@@ -288,7 +288,6 @@ let g:airline#extensions#tabline#formatter = 'unique_tail'
 " GoTo code navigation.
 " Enable smarter tabline
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#enabled = 2
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
