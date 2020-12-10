@@ -59,8 +59,11 @@ set number
 set cursorline
 
 " Encoding
-set encoding=utf-8
+set encoding=UTF-8
 set termencoding=utf-8
+
+" Fonts
+set guifont=Hack_Nerd_Font:h11
 
 " Highlight matching search patterns
 set hlsearch
@@ -250,7 +253,6 @@ call plug#begin('~/.vim/plugged')
 " Themes
 Plug 'morhetz/gruvbox'
 Plug 'franbach/miramare'
-Plug 'chriskempson/base16-vim'
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -266,6 +268,7 @@ Plug 'pangloss/vim-javascript' "JavaScript support
 Plug 'leafgarland/typescript-vim' "TypesScript syntax
 Plug 'shmup/vim-sql-syntax' "SQL syntax support
 Plug 'alcesleo/vim-uppercase-sql' "Uppercase SQL commands
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 colorscheme gruvbox
@@ -280,6 +283,7 @@ nmap <Leader>s <Plug>(easymotion-s2)
 nmap <Leader>nt :NERDTreeFind<CR>
 
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail'
 " GoTo code navigation.
 " Enable smarter tabline
 let g:airline#extensions#tabline#enabled = 1
