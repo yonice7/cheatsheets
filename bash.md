@@ -16,6 +16,9 @@ Then after installing the fonts, you just set the theme by editing your`~/.bashr
 ```shell
 OSH_THEME="powerline"
 ```
+## Fonts
+`unzip Hack.zip -d ~/.fonts`
+`fc-cache -fv`
 ## Using Fugitive for Vim
 ### Installing and Config
 ```shell
