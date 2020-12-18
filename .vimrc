@@ -6,7 +6,7 @@ set rnu
 set ruler
 set mouse=a
 set clipboard=unnamed
-set termguicolors
+"set termguicolors
 " Helps force plug-ins to load correctly when it is turned back on below.
 filetype off
 
