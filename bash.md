@@ -24,8 +24,10 @@ fc-cache -fv
 ## Themes
 ```shell
 mkdir ~/.themes
-tar -xf Juno-ocean.tar.xz ~/.themes
-mv Juno-ocean ~/.themes
+tar -xf Snow-alien.tar.xz ~/.themes
+tar -xf Kripton.tar.xz ~/.themes
+mv Snow-alien ~/.themes
+mv Kripton ~/.themes
 ```
 
 ## Icons
