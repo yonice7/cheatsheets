@@ -173,7 +173,6 @@ sudo add-apt-repository ppa:xubuntu-dev/extras && sudo apt update && sudo apt in
 ### Conky
 ```shell
 sudo apt install conky
-cd ~/.config
 vim .conkyrc
 ```
 
