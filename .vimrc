@@ -260,6 +260,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'christoomey/vim-tmux-runner'
 Plug 'neoclide/coc.nvim' , { 'branch' : 'release' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -328,3 +329,8 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
                 \ }
 let g:NERDTreeGitStatusUseNerdFonts = 1
 let g:NERDTreeGitStatusShowClean = 1
+
+" Vim Tmux Runner
+let g:VtrUseVtrMaps = 1
+let g:VtrStripLeadingWhitespace = 1
+let g:VtrClearEmptyLines = 1
