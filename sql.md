@@ -272,3 +272,42 @@ The ROW_NUMBER() function requires the OVER(ORDER BY) expression to determine th
 ```sql
 SELECT ROW_NUMBER() OVER (ORDER BY Products.ProductID) FROM Products;
 ```
+
+## Using PostgresSQL
+
+### Install
+```shell
+sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install postgresql
+```
+### pgcli
+```shell
+sudo apt-get install pgcli
+```
+### Run
+```shell
+sudo su -l postgres
+psql
+\q
+exit
+```
+### PostgresSQL in Vim
+#### CREATE DATABASE
+```shell
+psql -h localhost -p portnumber -U user database
+psql -h localhost -p 5432 -U postgres scratch
+```
+#### Create a tmux pane referred as "runner"
+- Open tmux
+- Open vim
+In vim create a tmux pane
+`:VtrOpenRunner`
+#### Run pgcli
+Run pgcli in the newly created pane and connect to the DB databese created above.
+`pgcli -h localhost -p 5432 -u postgres pagila`
+#### Query
+Once we have pgcli running on the runner pane, we can write down our SQL query in Vim then select the query in Visual mode.
+`SELECT film_id, title FROM film LIMIT 5;`
+Finally use the binding `<Leader>sl` to send the selected SQL commands to the runner. The binding (enable via `g:VtrUseVtrMaps` mentioned above) executes command `:VtrSendLinesToRunner`.
