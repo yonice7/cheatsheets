@@ -8,4 +8,8 @@
 [![tmuxconf](https://img.shields.io/badge/tmux_style-000000?&style=for-the-badge&logo=powershell&logocolor=white)](https://github.com/joisaac/cheatsheets/blob/main/.tmux.conf)<br/>
 [![conkyrc](https://img.shields.io/badge/conkyrc-000000?&style=for-the-badge&logo=c&logocolor=white)](https://github.com/joisaac/cheatsheets/blob/main/.conkyrc)
 ## SQL
-[![sqlcheatsheet](https://img.shields.io/badge/sql_cheatsheet-336791?&style=for-the-badge&logo=postgresql&logocolor=white)](https://github.com/joisaac/cheatsheets/blob/main/sql.md)
+[![sqlcheatsheet](https://img.shields.io/badge/sql_cheatsheet-336791?&style=for-the-badge&logo=postgresql&logocolor=white)](https://github.com/joisaac/cheatsheets/blob/main/sql.md)<br/>
+[![pgcli](https://img.shields.io/badge/pgcli_conf-000000?&style=for-the-badge&logo=postgresql&logocolor=white)](https://github.com/joisaac/cheatsheets/blob/main/sql.md)
+```shell
+vi ~/.config/pgcli/config
+```
