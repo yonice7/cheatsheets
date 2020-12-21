@@ -9,7 +9,8 @@
 [![conkyrc](https://img.shields.io/badge/conkyrc-000000?&style=for-the-badge&logo=c&logocolor=white)](https://github.com/joisaac/cheatsheets/blob/main/.conkyrc)
 ## SQL
 [![sqlcheatsheet](https://img.shields.io/badge/sql_cheatsheet-336791?&style=for-the-badge&logo=postgresql&logocolor=white)](https://github.com/joisaac/cheatsheets/blob/main/sql.md)<br/>
-[![pgcli](https://img.shields.io/badge/pgcli_conf-000000?&style=for-the-badge&logo=postgresql&logocolor=white)](https://github.com/joisaac/cheatsheets/blob/main/sql.md)
+[![pgcli](https://img.shields.io/badge/pgcli_config-000000?&style=for-the-badge&logo=postgresql&logocolor=white)](https://github.com/joisaac/cheatsheets/blob/main/sql.md)
 ```shell
+sudo apt install pgcli
 vi ~/.config/pgcli/config
 ```
