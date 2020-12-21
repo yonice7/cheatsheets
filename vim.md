@@ -126,3 +126,8 @@ Ctrl-W switch from the terminal to the next window
 :Gpush
 :Gstatus
 ```
+
+### Vtr
+```vim
+<Leader>sl ":VtrSendLinestoRunner
+<Leader>va ":VtrAttachToPane
