@@ -48,6 +48,11 @@ ON t1.col_match = t2.col_match
 WHERE T1.ID is NULL OR t2.id IS NULL
 ```
 ### SELF JOIN
+They are about creating a copy of the same table and joining those two tables
+together
+1. Create the first by using AS, select what we want to display
+2. JOIN the same table and calling it different AS
+3. ON the values we want to match
 ```sql
 SELECT tableA.col, tableB.col
 FROM table AS table A
@@ -86,7 +91,7 @@ CREATE TABLE players(
 ### INSERT
 Allows you to insert rows to a table
 ```sql
-INSERT INTO talbe(column1, column2)
+INSERT INTO table(column1, column2)
 VALUES(value1, value2,...),
 VALUES(value1, value2,...),...;
 ```
@@ -185,17 +190,12 @@ This becomes very useful in cases where a null value would cause an error or unw
 
 ## Correlated Suquery
 *So I think it's easier if you work with the subquery backwards. The subquery returns all of the area values that are on the same continent as x and then if x.area is greater than every value in what the subquery returns, that comparison will be TRUE and thus return in the outer query.
-so if you have x comparison ALL (subquery) the comparison is true if it is true for all results in the subquery* **From Discord**
+so if you have x comparison ALL (subquery) the comparison is true if it is true for all results in the subquery* **Discord**
 
-*sorta, it doesn't run that way under the hood but it is checking it against every value in there. I think if you tried to build that query from scratch you'd think of it that way though
-1) figure out the values you need from your database and select those.
+*sorta, it doesn't run that way under the hood but it is checking it against every value in there. I think if you tried to build that query from scratch you'd think of it that way though*
+*1) figure out the values you need from your database and select those.
 2) figure out the comparison you need
-3) build a subquery to return all the values you need to compare TO* **Discord**
-
-## Self Join
-1. Create the first by using AS, select what we want to display
-2. JOIN the same table and calling it different AS
-3. ON the values we want to match
+3) build a subquery to return all the values you need to compare to* **Discord**
 
 ## Wildcards
 ### FOR MS SQL
@@ -212,7 +212,11 @@ SELECT DISTINCT s.CITY
 FROM STATION s
 WHERE LOWER(s.CITY) SIMILAR TO '(a|e|i|o|u)%';
 ```
-
+```sql
+SELECT DISTINCT s.CITY
+FROM STATION s
+WHERE s.CITY ~ '^(a|e|i|o|u)';
+```
 ### MySQL
 ```sql
 SELECT DISTINCT CITY
@@ -232,6 +236,10 @@ ORDER BY CITY;
 *			// ...repeated any number of times
 [aeiou]			// another vowel
 $			// end of string
+~ // Matches regular expression, case sensitive
+~* // Matches regular expression, case insensitive
+!~ // Does not match regular expression, case sensitive
+!~* // Does not to match regular expression, case insensitive
 ```
 
 ```sql
@@ -241,6 +249,10 @@ WHERE CITY NOT REGEXP '^[AEIOU]|[aeiou]$';
 | : and
 NOT REGEXP ^[aeiou].*[aeiou]$
 ```
+
+### Patter matching
+[PostgresSQL docs](https://www.postgresql.org/docs/9.3/functions-matching.html)<br/>
+[MySQL docs](https://dev.mysql.com/doc/refman/8.0/en/pattern-matching.html)
 
 ## REPLACE()
 Replace a value from an int or a str
