@@ -173,7 +173,11 @@ Returns the first element that is not null.
 ```sql
 SELECT item, (price - COALESCE(discount,0)) AS final FROM table
 ```
-
+It can also be used in case we want to return a string instead of null value
+```sql
+SELECT name, COALESCE(mobile, '07986 444 2266') AS mobile
+FROM teacher;
+```
 ## CAST
 Let's you convert from one datatype into another 
 ```sql
