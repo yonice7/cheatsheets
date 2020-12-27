@@ -271,6 +271,10 @@ Plug 'leafgarland/typescript-vim' "TypesScript syntax
 Plug 'shmup/vim-sql-syntax' "SQL syntax support
 Plug 'alcesleo/vim-uppercase-sql' "Uppercase SQL commands
 Plug 'ryanoasis/vim-devicons'
+Plug 'jupyter-vim/jupyter-vim' "Jupyter Notebook
+Plug 'godlygeek/tabular' "Markdown syntax highlighting
+Plug 'plasticboy/vim-markdown' "Markdown Plugin
+Plug 'ivanov/vim-ipython' "IPython integration
 call plug#end()
 
 colorscheme gruvbox
@@ -334,3 +338,14 @@ let g:NERDTreeGitStatusShowClean = 1
 let g:VtrUseVtrMaps = 1
 let g:VtrStripLeadingWhitespace = 1
 let g:VtrClearEmptyLines = 1
+
+" Jupyer Notebook Configuration
+if has('vim')
+    let g:python3_host_prog = '/path/to/python/bin/python3'
+else
+    set pyxversion=3
+endif    
+
+" Markdown Configuration
+let g:vim_markdown_math = 1 "Math Latex Support
+let g:vim_markdown_folding_style_pythonic = 1 "Folding style pythonic
