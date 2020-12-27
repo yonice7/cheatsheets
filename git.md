@@ -53,8 +53,10 @@ git revert HEAD # Discard last commit
 git diff HEAD~1 HEAD # See differences between two commit
 ```
 ## Fugitive Commands
+```shell
 :Gw # git add current_file
 :Gstatus # git status
 :Gcommit # git commit
 :Gpush # git push
 :Gread # git checkout -- filename
+```
