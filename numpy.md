@@ -2,7 +2,10 @@
 - In Linear Algebra, convention to treat vectors as 2-D
 - But not in Numpy!, Vectors will be 1-D (most of the time)
 $$Scalar 24$$
-Vector row $$ \begin{bmatrix}2 & -8 & 7\end{bmatrix}$$
+Vector row 
+```python 
+$$ \begin{bmatrix}2 & -8 & 7\end{bmatrix}$$
+```
 Vector column $$\begin{bmatrix}2 // -8 // 7\end{bmatrix}$$
 Matrix $$\begin{bmatrix}6 & 4 & 24 // 1 & -9 & 8 \end{bmatrix}$$
 ### Dot Product / Inner Product 
