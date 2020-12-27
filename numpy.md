@@ -93,10 +93,12 @@ a.T #Transpose: switching axes (attribute)
 a.sort() #sorting ndarray b again
 ```
 ## Dimensions
-- [array] 
-- [[rows],[rows]]
-- [,,,,,] columns
-- [[[1matrix-row1],[1matrix-row2]],[[2matrix-row1],[2matrix-row2]]] 3D
+```python
+[array] 
+[[rows],[rows]]
+[,,,,,] columns
+[[[1matrix-row1],[1matrix-row2]],[[2matrix-row1],[2matrix-row2]]] 3D
+```
 ## Linear Algebra and more
 ```python
 np.allclose(var1, var2) # To see if two arrays are equal
@@ -110,16 +112,6 @@ np.linalg.eigh # Symmetric
 np.linalg.solve(A,b) # Solving linnear systems
 ; output dissapears
 ```
-## Convert an image into a numpy array
-```python
-Download the image
-from PIL import Image
-im = Image.open('image.png')
-type(im)
-arr = np.array(im)
-Show the image
-plt.imshow(arr)
-```
 ## Basic Operations
 ```python
 np.add(a,b)
@@ -129,4 +121,4 @@ np.divide(a,b)
 ```
 
 [1]: https://github.com/joisaac/cheatsheets/blob/main/numpy_tutorial.ipynb
-[2]: https://lazyprogrammer.me/ 
+[2]: https://lazyprogrammer.me/
