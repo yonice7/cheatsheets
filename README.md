@@ -7,8 +7,8 @@ Below, there are clickable icons to all the content available in this
 repository. 
 ## Python
 [![python](https://img.shields.io/badge/python_cheatsheet%20-14354C.svg?&style=for-the-badge&logo=python&logoColor=white)](https://github.com/joisaac/cheatsheets/blob/main/python-cheatsheet.md)<br/>
-[![numpy](https://img.shields.io/badge/numpy_cheatsheet-013243.svg?&style=for-the-badge&logo=numpy&logoColor=white)]()<br/>
-[![pandas](https://img.shields.io/badge/pandas_cheatsheet-150458.svg?&style=for-the-badge&logo=pandas&logoColor=white)]()
+[![numpy](https://img.shields.io/badge/numpy_cheatsheet-013243.svg?&style=for-the-badge&logo=numpy&logoColor=white)](https://github.com/joisaac/cheatsheets/blob/main/numpy.md)<br/>
+[![pandas](https://img.shields.io/badge/pandas_cheatsheet-150458.svg?&style=for-the-badge&logo=pandas&logoColor=white)](https://github.com/joisaac/cheatsheets/blob/main/pandas.md)
 ## Vim & Bash
 [![.vimrc](https://img.shields.io/badge/my_vimrc-019733?&style=for-the-badge&logo=vim&logoColor=white)](https://github.com/joisaac/cheatsheets/blob/main/.vimrc)<br/>
 [![vimcheatsheet](https://img.shields.io/badge/vim_cheatsheet-004919?&style=for-the-badge&logo=vim&logocolor=white)](https://github.com/joisaac/cheatsheets/blob/main/vim.md)<br/>
