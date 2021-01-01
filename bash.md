@@ -184,8 +184,10 @@ cd ~/.config/gtk-3.0/gtk.css
 ```
 ### Clock
 `<span font_desc = "Hack Nerd Font 11"  foreground = "#47def1"  > %b,%d</span><span font_desc = "Source Code Pro   11"   foreground = "#ccffff" > %I:%M %p</span>`
-### Apps
-`<span font_desc = "Hack Nerd Font   11"  foreground = "#47def1">  </span>`
+###  Net Tools
+```shell
+sudo apt install net-tools
+```
 ### Change icons in dock
 ```shell
 cd /usr/share/applications
