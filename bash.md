@@ -24,7 +24,7 @@ fc-cache -fv
 ## Themes
 ```shell
 mkdir ~/.themes
-tar -xf Snow-alien.tar.xz ~/.themes
+tar -xf Snow-alien.tar.xz -C ~/.themes
 tar -xf Kripton.tar.xz ~/.themes
 mv Snow-alien ~/.themes
 mv Kripton ~/.themes
