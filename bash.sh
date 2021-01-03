@@ -1,82 +1,100 @@
-echo # print
-for # for loop
-in # in
-{i..l..s} # range(i,l,s)
-$ # print a variable
-; # command separator
-do # do certain action
-$x # print a variable
-;done # finish script
-~ # home directory, i.e cd ~
-? # wildcard single character
-* # sequence wildcard
-[] # character set wildcard
-[1#5] # range in the character wildcard
-echo ${Var:4:4} # string indentation range
-echo ${var:6} # string indentation from, we start from 0
-printf "%.3f\n" # Print a floating point and round it nf, it goes before what you want to print
-$(echo $i | bc -l) # We pass an operations string such as "(3 + 5) * 5 / 4" and operations will be performed
-| bc -l # If bc is invoked with the -l option, a math library is preloaded 
-read name # creates a variable
+echo                 # print
+for                  # for loop
+in                   # in
+{i..l..s}            # range(i,l,s)
+$                    # print a variable
+;                    # command separator
+do                   # do certain action
+$x                   # print a variable
+;done                # finish script
+~                    # home directory, i.e cd ~
+?                    # wildcard single character
+*                    # sequence wildcard
+[]                   # character set wildcard
+[1#5]                # range in the character wildcard
+echo ${Var:4:4}      # string indentation range
+echo ${var:6}        # string indentation from, we start from 0
+printf "%.3f\n"      # Print a floating point and round it nf, it goes before what you want to print
+$(echo $i | bc -l)   # We pass an operations string such as "(3 + 5) * 5 / 4" and operations will be performed
+| bc -l              # If bc is invoked with the -l option, a math library is preloaded 
+read name            # creates a variable
 echo "Welcome $name" # prints a message + variable
 mv old_name new_name # renaming a file
-((...)) # means perfrom arithmetic and return the result of the calculation
-((...)) # we can also use them to perform, booleans statements
-[[...]] # They are keywords, they allow us to use special parsing rules. Such as ||, (), &&, <, >, ==, !=
-$c == [Yy] # It is like 'in "Yy"' in Python
-\* # If we want to use * as multiplyer, there has to be a \ before it.
-{} # List are in braces and separated by commans , with no spaces i.e {+,-,\*,/}
-&& # "and" statement
-arr=($(cat)) # reads in an array [1,2,3,4]
-arr=${arr[*]} # render a new variable of type string from the merging of the array arr delimited by space, i.e., from [1,3,5,6] to "1 3 5 6"
-arr=${arr// /+} # changing to [1+2+3+4+5+6]
+((...))              # means perfrom arithmetic and return the result of the calculation
+((...))              # we can also use them to perform, booleans statements
+[[...]]              # They are keywords, they allow us to use special parsing rules. Such as ||, (), &&, <, >, ==, !=
+$c == [Yy]           # It is like 'in "Yy"' in Python
+\*                   # If we want to use * as multiplyer, there has to be a \ before it.
+{}                   # List are in braces and separated by commans , with no spaces i.e {+,-,\*,/}
+&&                   # "and" statement
+arr=($(cat))         # reads in an array [1,2,3,4]
+arr=${arr[*]}        # render a new variable of type string from the merging of the array arr delimited by space, i.e., from [1,3,5,6] to "1 3 5 6"
+arr=${arr// /+}      # changing to [1+2+3+4+5+6]
 arr=$((READY_TO_SUM)) # summation result
-arr[@]:3:5 # Indexing, :index position:number of values forward
-arr[@]/*[Aa]*/ # Regular expression to ommit words having a or 
+arr[@]:3:5           # Indexing, :index position:number of values forward
+arr[@]/*[Aa]*/       # Regular expression to ommit words having a or 
 arr[@]/[[:upper:]]/. # Replace space for a dot
-${arr[3]} # Index printing
-${#arr[@]} # Print the count of values "#"
+${arr[3]}            # Index printing
+${#arr[@]}           # Print the count of values "#"
 
 # cut
 echo '0000 192.168.1.100 192.168.100.1' |cut -d ' ' -f 2 |cut -d '.' -f 4|cut -c 1
--d # flag set the delimiter, space in this case
--f # flag shows column to return, 2. The column starts at 1
--c # it is used to extract the first character from the results of the second command
+-d  # flag set the delimiter, space in this case
+-f  # flag shows column to return, 2. The column starts at 1
+-c  # it is used to extract the first character from the results of the second command
 cut # it works on every line so it's not necessary to perform a loop, -d 'Tab' is the default delimiter
 
 # head
-head -n num # Get the first n lines
-tail num # Get the last n lines
-head -c num # Get the first n characters
+head -n num         # Get the first n lines
+tail num            # Get the last n lines
+head -c num         # Get the first n characters
 head -22 | tail +12 # Get a range of lines
 
 # tr
 tr "()" "[]" # Replace one with other
-tr -d a-z # Delete the range a character input
-tr -s # Replace spaces
+tr -d a-z    # Delete the range a character input
+tr -s        # Replace spaces
 
 # sort
--r # Reverse the order
--n # Sort by number
--t # Set the field separator
--knum,num # Sort by column starting from num and ending in num
+-r                        # Reverse the order
+-n                        # Sort by number
+-t                        # Set the field separator
+-knum,num                 # Sort by column starting from num and ending in num
 -t $'\t' + more arguments # Sort every row
--nrk2 # Sort a row by number, descending and from column 2
+-nrk2                     # Sort a row by number, descending and from column 2
 
 # uniq
 -c # Counts repeated words
 
 # paste
-paste -s # From words divided by tabs in a column to words divided by spaces in a row
-paste - - - # Divide the words in 3 columns
+paste -s     # From words divided by tabs in a column to words divided by spaces in a row
+paste - - -  # Divide the words in 3 columns
 paste -d, -s # Sets a comma as delimiter
 
 # Statementes
 if condition; then echo output; elif condition; then echo output; else echo output; fi
 
-Ctrl + D # Save and exit after cat command
+# Shortcuts
+Ctrl + D         # Save and exit after cat command
 Alt + D
 Ctrl + A or Home # Go to the beginning of the line
-Ctrl + E or End # Go to the end of the line
-Ctrl + K # Delete from the cursor to the end of the line
-Ctrl + U # Delete from the cursor to the beginning of the line
+Ctrl + E or End  # Go to the end of the line
+Ctrl + K         # Delete from the cursor to the end of the line
+Ctrl + U         # Delete from the cursor to the beginning of the line
+Ctrl + L         # Clear shortcut
+
+# General
+df -h                   # see usb devices
+lsblk                   # see usb devices
+ls -lstr                # list
+find . -name "filename" # find a file or directory, specific name, returns pwd
+find / -name "filename" # find from root directory
+locate filaname         # works so much better than find
+				                # locate uses a prebuilt database, locate is faster, but to have it updated we should run the command "updatedb" 
+				                # find iterates over a filesystem to locate files
+passwd userid           # change password
+passwd                  # change general password
+                        # wildcards 
+                        # * - represent zero or more characters
+                        # ? - represents a single character
+                        # [] - represents a range of characters
