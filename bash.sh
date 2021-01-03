@@ -100,3 +100,4 @@ passwd                  # change general password
                         # * - represent zero or more characters
                         # ? - represents a single character
                         # [] - represents a range of characters
+cd /                    # Change directory to root
