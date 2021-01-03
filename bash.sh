@@ -86,6 +86,8 @@ Ctrl + L         # Clear shortcut
 # General
 df -h                   # see usb devices
 lsblk                   # see usb devices
+ls -l                   # show a list
+ls -a                   # show files including hidden ones
 ls -lstr                # list
 find . -name "filename" # find a file or directory, specific name, returns pwd
 find / -name "filename" # find from root directory
