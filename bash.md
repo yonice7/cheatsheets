@@ -27,6 +27,14 @@ sudo apt install zsh
 chsh -s $(which zsh)
 ```
 ### Oh my zsh
+#### Install
+``shell
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+#### Gruvbox Theme
+```shell
+curl -L https://raw.githubusercontent.com/sbugzu/gruvbox-zsh/master/gruvbox.zsh-theme > ~/.oh-my-zsh/custom/themes/gruvbox.zsh-theme
+```
 ## Fonts
 ```shell
 unzip Hack.zip -d ~/.fonts
