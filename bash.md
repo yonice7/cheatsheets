@@ -16,6 +16,17 @@ Then after installing the fonts, you just set the theme by editing your`~/.bashr
 ```shell
 OSH_THEME="powerline"
 ```
+## Zsh
+### Install
+```shell
+sudo apt update
+sudo apt install zsh
+```
+### Make default
+``shell
+chsh -s /bin/zsh
+```
+### Oh my zsh
 ## Fonts
 ```shell
 unzip Hack.zip -d ~/.fonts
