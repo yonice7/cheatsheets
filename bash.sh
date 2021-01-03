@@ -89,6 +89,7 @@ lsblk                   # see usb devices
 ls -l                   # show a list
 ls -a                   # show files including hidden ones
 ls -lstr                # list
+ls -lstri               # show with inode (number)
 find . -name "filename" # find a file or directory, specific name, returns pwd
 find / -name "filename" # find from root directory
 locate filaname         # works so much better than find
@@ -101,3 +102,11 @@ passwd                  # change general password
                         # ? - represents a single character
                         # [] - represents a range of characters
 cd /                    # Change directory to root
+                        # _ - represents a single character
+                        # ^[] - not like
+                        #  [^] - the beginning
+ls -l abc*              # list every file that starts with abc...
+man [command]           # see a manual of the command
+ln -s /path/to/file     # create a soft link
+ln /path/to/file        # create a hard link
+echo "text" > file      # create a text within selected file
