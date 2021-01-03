@@ -24,7 +24,7 @@ sudo apt install zsh
 ```
 ### Make default
 ``shell
-chsh -s /bin/zsh
+chsh -s $(which zsh)
 ```
 ### Oh my zsh
 ## Fonts
