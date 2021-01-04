@@ -110,3 +110,11 @@ man [command]           # see a manual of the command
 ln -s /path/to/file     # create a soft link
 ln /path/to/file        # create a hard link
 echo "text" > file      # create a text within selected file
+chmod                   # change dir or file permissions
+chmod g-w [filename]    # group can't write the file
+chmod a-r [filename]    # noone can read the file
+chmod u-w [filename]    # user can't write the file
+chmod u+rw [filename]   # add permission for user read & write
+chmod g+rw [filename]   # add permission for group read & write
+chmod o+r [filename]    # add permission for others read
+chmod a-x [dir]/        # nobody can enter the dir
