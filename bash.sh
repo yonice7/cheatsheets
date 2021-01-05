@@ -45,10 +45,10 @@ echo '0000 192.168.1.100 192.168.100.1' |cut -d ' ' -f 2 |cut -d '.' -f 4|cut -c
 cut # it works on every line so it's not necessary to perform a loop, -d 'Tab' is the default delimiter
 
 # head
-head -n num         # Get the first n lines
-tail num            # Get the last n lines
-head -c num         # Get the first n characters
-head -22 | tail +12 # Get a range of lines
+head -n [num]         # Get the first n lines
+tail [num]            # Get the last n lines
+head -c [num]         # Get the first n characters
+head -22 | tail +12   # Get a range of lines
 
 # tr
 tr "()" "[]" # Replace one with other
@@ -92,47 +92,51 @@ Ctrl + U         # Delete from the cursor to the beginning of the line
 Ctrl + L         # Clear shortcut
 
 # General
-df -h                   # see usb devices
-lsblk                   # see usb devices
-ls -l                   # show a list
-ls -a                   # show files including hidden ones
-ls -lstr                # list
-ls -lstri               # show with inode (number)
-find . -name "filename" # find a file or directory, specific name, returns pwd
-find / -name "filename" # find from root directory
-locate filaname         # works so much better than find
-				                # locate uses a prebuilt database, locate is faster, 
-updatedb                # but to have it updated we should run the command "updatedb" 
-				                # find iterates over a filesystem to locate files
-passwd userid           # change password
-passwd                  # change general password
-                        # wildcards 
-                        # * - represent zero or more characters
-                        # ? - represents a single character
-                        # [] - represents a range of characters
-cd /                    # Change directory to root
-                        # _ - represents a single character
-                        # ^[] - not like
-                        #  [^] - the beginning
-ls -l abc*              # list every file that starts with abc...
-man [command]           # see a manual of the command
-ln -s /path/to/file     # create a soft link
-ln /path/to/file        # create a hard link
-echo "text" > file      # create a text within selected file
-echo "more t" >> file   # add a second line to a file
-chmod                   # change dir or file permissions
-chmod g-w [filename]    # group can't write the file
-chmod a-r [filename]    # noone can read the file
-chmod u-w [filename]    # user can't write the file
-chmod u+rw [filename]   # add permission for user read & write
-chmod g+rw [filename]   # add permission for group read & write
-chmod o+r [filename]    # add permission for others read
-chmod a-x [dir]/        # nobody can enter the dir
-chmod 000 [file]        # 0 user 0 group 0 other, chmod calculator online
-chown                   # change file ownership
-chgrp                   # change group ownership
-chown [user] [file]     # now the file is own by [user]
-chgro [group] [file]    # now the file is own by [group]
-whatis [command]        # help command
-[command] --help        # help command 2
-man [command]           # help command 3
+df -h                                       # see usb devices
+lsblk                                       # see usb devices
+ls -l                                       # show a list
+ls -a                                       # show files including hidden ones
+ls -lstr                                    # list
+ls -lstri                                   # show with inode (number)
+find . -name "filename"                     # find a file or directory, specific name, returns pwd
+find / -name "filename"                     # find from root directory
+locate filaname                             # works so much better than find
+				                                    # locate uses a prebuilt database, locate is faster, 
+updatedb                                    # but to have it updated we should run the command "updatedb" 
+				                                    # find iterates over a filesystem to locate files
+passwd userid                               # change password
+passwd                                      # change general password
+                                            # wildcards 
+                                            # * - represent zero or more characters
+                                            # ? - represents a single character
+                                            # [] - represents a range of characters
+cd /                                        # Change directory to root
+                                            # _ - represents a single character
+                                            # ^[] - not like
+                                            #  [^] - the beginning
+ls -l abc*                                  # list every file that starts with abc...
+man [command]                               # see a manual of the command
+ln -s /path/to/file                         # create a soft link
+ln /path/to/file                            # create a hard link
+echo "text" > file                          # create a text within selected file
+echo "more t" >> file                       # add a second line to a file
+chmod                                       # change dir or file permissions
+chmod g-w [filename]                        # group can't write the file
+chmod a-r [filename]                        # noone can read the file
+chmod u-w [filename]                        # user can't write the file
+chmod u+rw [filename]                       # add permission for user read & write
+chmod g+rw [filename]                       # add permission for group read & write
+chmod o+r [filename]                        # add permission for others read
+chmod a-x [dir]/                            # nobody can enter the dir
+chmod 000 [file]                            # 0 user 0 group 0 other, chmod calculator online
+chown                                       # change file ownership
+chgrp                                       # change group ownership
+chown [user] [file]                         # now the file is own by [user]
+chgro [group] [file]                        # now the file is own by [group]
+whatis [command]                            # help command
+[command] --help                            # help command 2
+man [command]                               # help command 3
+[command] | tee [file]                      # run [command] and create a file
+command1 [arguments] | command2 [arguments] # Connect the output of one command directly to the input of another command
+rmdir [dir]                                 # remove a directory
+rm -rf [file] or [dir]                      # will forcefully remove subdirectories and its contents as well
