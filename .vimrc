@@ -281,9 +281,9 @@ call plug#end()
 
 let g:miramare_enable_italic=1
 let g:miramare_disable_italic_comment=1
-colorscheme miramare 
-" set background=dark
-"let g:gruvbox_constrast_dark = "hard"
+colorscheme gruvbox 
+set background=dark
+let g:gruvbox_constrast_dark = "hard"
 " Closes nerdtree when open a file from it
 let NERDTreeQuitOnOpen=1
 
@@ -306,7 +306,7 @@ let g:airline_left_sep = ' '
 let g:airline_left_alt_sep = '|'
 let g:airline_right_sep = ' '
 let g:airline_right_alt_sep = '|'
-let g:airline_theme= 'miramare'
+let g:airline_theme= 'gruvbox'
 
 " Python
 let g:python_highlight_all = 1
