@@ -72,6 +72,7 @@ cat -n file1 file2      # numbering the output lines
 
 # uniq
 -c # Counts repeated words
+wc -c [filename] # count how many words in file
 
 # paste
 paste -s     # From words divided by tabs in a column to words divided by spaces in a row
