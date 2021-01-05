@@ -93,7 +93,8 @@ ls -lstri               # show with inode (number)
 find . -name "filename" # find a file or directory, specific name, returns pwd
 find / -name "filename" # find from root directory
 locate filaname         # works so much better than find
-				                # locate uses a prebuilt database, locate is faster, but to have it updated we should run the command "updatedb" 
+				                # locate uses a prebuilt database, locate is faster, 
+updatedb                # but to have it updated we should run the command "updatedb" 
 				                # find iterates over a filesystem to locate files
 passwd userid           # change password
 passwd                  # change general password
