@@ -118,3 +118,8 @@ chmod u+rw [filename]   # add permission for user read & write
 chmod g+rw [filename]   # add permission for group read & write
 chmod o+r [filename]    # add permission for others read
 chmod a-x [dir]/        # nobody can enter the dir
+chmod 000 [file]        # 0 user 0 group 0 other, chmod calculator online
+chown                   # change file ownership
+chgrp                   # change group ownership
+chown [user] [file]     # now the file is own by [user]
+chgro [group] [file]    # now the file is own by [group]
