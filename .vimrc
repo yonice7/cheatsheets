@@ -6,7 +6,9 @@ set rnu
 set ruler
 set mouse=a
 set clipboard=unnamed
-"set termguicolors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+set termguicolors
 " Helps force plug-ins to load correctly when it is turned back on below.
 filetype off
 
@@ -277,9 +279,11 @@ Plug 'plasticboy/vim-markdown' "Markdown Plugin
 Plug 'ivanov/vim-ipython' "IPython integration
 call plug#end()
 
-colorscheme gruvbox
-set background=dark
-let g:gruvbox_constrast_dark = "hard"
+let g:miramare_enable_italic=1
+let g:miramare_disable_italic_comment=1
+colorscheme miramare 
+" set background=dark
+"let g:gruvbox_constrast_dark = "hard"
 " Closes nerdtree when open a file from it
 let NERDTreeQuitOnOpen=1
 
@@ -302,7 +306,7 @@ let g:airline_left_sep = ' '
 let g:airline_left_alt_sep = '|'
 let g:airline_right_sep = ' '
 let g:airline_right_alt_sep = '|'
-let g:airline_theme= 'gruvbox'
+let g:airline_theme= 'miramare'
 
 " Python
 let g:python_highlight_all = 1
