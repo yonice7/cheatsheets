@@ -111,6 +111,7 @@ man [command]           # see a manual of the command
 ln -s /path/to/file     # create a soft link
 ln /path/to/file        # create a hard link
 echo "text" > file      # create a text within selected file
+echo "more t" >> file   # add a second line to a file
 chmod                   # change dir or file permissions
 chmod g-w [filename]    # group can't write the file
 chmod a-r [filename]    # noone can read the file
