@@ -63,6 +63,13 @@ tr -s        # Replace spaces
 -t $'\t' + more arguments # Sort every row
 -nrk2                     # Sort a row by number, descending and from column 2
 
+# cat
+cat file1 file2         # read the content of two files
+cat > file1             # create a new file
+cat >> file1            # appending text to a file
+cat file1 > file2       # output content into a new file
+cat -n file1 file2      # numbering the output lines
+
 # uniq
 -c # Counts repeated words
 
@@ -128,10 +135,3 @@ chgro [group] [file]    # now the file is own by [group]
 whatis [command]        # help command
 [command] --help        # help command 2
 man [command]           # help command 3
-
-# cat
-cat file1 file2         # read the content of two files
-cat > file1             # create a new file
-cat >> file1            # appending text to a file
-cat file1 > file2       # output content into a new file
-cat -n file1 file2      # numbering the output lines
