@@ -23,12 +23,12 @@ sudo apt update
 sudo apt install zsh
 ```
 ### Make default
-``shell
+```shell
 chsh -s $(which zsh)
 ```
 ### Oh my zsh
 #### Install
-``shell
+```shell
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 #### Gruvbox Theme
