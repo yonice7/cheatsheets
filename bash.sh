@@ -37,6 +37,13 @@ arr[@]/[[:upper:]]/.  # Replace space for a dot
 ${arr[3]}             # Index printing
 ${#arr[@]}            # Print the count of values "#"
 
+# cat
+cat file1 file2         # read the content of two files
+cat > file1             # create a new file
+cat >> file1            # appending text to a file
+cat file1 > file2       # output content into a new file
+cat -n file1 file2      # numbering the output lines
+
 # cut
 echo '0000 192.168.1.100 192.168.100.1' |cut -d ' ' -f 2 |cut -d '.' -f 4|cut -c 1
 -d                       # flag set the delimiter, space in this case
@@ -76,13 +83,6 @@ tr -s        # Replace spaces
 -knum,num                 # Sort by column starting from num and ending in num
 -t $'\t' + more arguments # Sort every row
 -nrk2                     # Sort a row by number, descending and from column 2
-
-# cat
-cat file1 file2         # read the content of two files
-cat > file1             # create a new file
-cat >> file1            # appending text to a file
-cat file1 > file2       # output content into a new file
-cat -n file1 file2      # numbering the output lines
 
 # uniq
 -c # Counts repeated words
