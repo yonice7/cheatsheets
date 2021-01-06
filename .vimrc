@@ -194,10 +194,7 @@ xmap ac <Plug>(coc-classobj-a)
 omap ac <Plug>(coc-classobj-a)
 
 " Use CTRL-S for selections ranges.
-" Requires 'textDocument/selectionRange' support of language server.
-nmap <silent> <C-s> <Plug>(coc-range-select)
-xmap <silent> <C-s> <Plug>(coc-range-select)
-
+" Requires 'textDocument/selectionRange' support of language server.  nmap <silent> <C-s> <Plug>(coc-range-select) xmap <silent> <C-s> <Plug>(coc-range-select) 
 " Add `:Format` command to format current buffer.
 command! -nargs=0 Format :call CocAction('format')
 
@@ -275,15 +272,17 @@ Plug 'alcesleo/vim-uppercase-sql' "Uppercase SQL commands
 Plug 'ryanoasis/vim-devicons'
 Plug 'jupyter-vim/jupyter-vim' "Jupyter Notebook
 Plug 'godlygeek/tabular' "Markdown syntax highlighting
-Plug 'plasticboy/vim-markdown' "Markdown Plugin
+"Plug 'plasticboy/vim-markdown' "Markdown Plugin
 Plug 'ivanov/vim-ipython' "IPython integration
 call plug#end()
 
 let g:miramare_enable_italic=1
 let g:miramare_disable_italic_comment=1
-colorscheme gruvbox 
-set background=dark
+let g:gruvbox_italic=1
 let g:gruvbox_constrast_dark = "hard"
+let g:gruvbox_termcolors=16
+set background=dark
+colorscheme gruvbox 
 " Closes nerdtree when open a file from it
 let NERDTreeQuitOnOpen=1
 
