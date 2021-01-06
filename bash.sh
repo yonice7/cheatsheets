@@ -62,8 +62,16 @@ ls -l | awk '{print $a1,$3}'                    # print only the first column an
 ls -l | awk '{print $NF}'                       # print the last column
 awk '/Jerry/ {print}' [file]                    # print a line containing an specific word
 awk -F: '{print $1}' /etc/passwd                # set a delimiter ":" and print first column
-ls -l | awk '{if($9 == "seinfeld") print $0;}'  # Get the field matching seinfeld
+ls -l | awk '{if($9 == "seinfeld") print $0;}'  # get the field matching seinfeld
 ls -l | awk '{print NF}'                        # Get the total numbers of fields
+
+# grep
+grep [keyword] [file]               # returns the lines containing the keyword 
+grep -c [keyword] [file]            # counts how many time the keyword appears in the document
+grep -i [keyword] [file]              # ignores the case-sensitive 
+grep -n [keyword] [file]              # display matchline and line number 
+grep -v [keyword] [file]              # exclude the keyword 
+egrep -i "[keyword]|[keyword]" [file] # search for 2 keywords
 
 # head
 head -n [num]         # Get the first n lines
@@ -85,7 +93,7 @@ tr -s        # Replace spaces
 -nrk2                     # Sort a row by number, descending and from column 2
 
 # uniq
--c # Counts repeated words
+-c               # Counts repeated words
 wc -c [filename] # count how many words in file
 
 # paste
@@ -104,6 +112,9 @@ Ctrl + E or End  # Go to the end of the line
 Ctrl + K         # Delete from the cursor to the end of the line
 Ctrl + U         # Delete from the cursor to the beginning of the line
 Ctrl + L         # Clear shortcut
+Alt + Backspace  # Delete the whole word
+Ctrl + Arrows    # Jump between words
+Ctrl + r         # Search one command
 
 # General
 df -h                                       # see usb devices
