@@ -12,7 +12,7 @@ repository.
 ## Vim & Bash
 [![.vimrc](https://img.shields.io/badge/my_vimrc-019733?&style=for-the-badge&logo=vim&logoColor=white)](https://github.com/joisaac/cheatsheets/blob/main/.vimrc)<br/>
 [![vimcheatsheet](https://img.shields.io/badge/vim_cheatsheet-004919?&style=for-the-badge&logo=vim&logocolor=white)](https://github.com/joisaac/cheatsheets/blob/main/vim.md)<br/>
-[![bash](https://img.shields.io/badge/shell-000000?&style=for-the-badge&logo=gnu-bash&logocolor=white)](https://github.com/joisaac/cheatsheets/blob/main/bash.md)<br/>
+[![bash](https://img.shields.io/badge/shell_style-000000?&style=for-the-badge&logo=gnu-bash&logocolor=white)](https://github.com/joisaac/cheatsheets/blob/main/bash.md)<br/>
 [![bashcheatsheet](https://img.shields.io/badge/bash_cheatsheet-000000?&style=for-the-badge&logo=gnu-bash&logocolor=white)](https://github.com/joisaac/cheatsheets/blob/main/bash.sh)<br/>
 [![zsh](https://img.shields.io/badge/my_zshrc-000000?&style=for-the-badge&logo=gnu-bash&logocolor=white)](https://github.com/joisaac/cheatsheets/commit/bcae1b35908ccfcf301eb3c4bd373eb034447870)<br/>
 [![tmuxconf](https://img.shields.io/badge/tmux_style-000000?&style=for-the-badge&logo=powershell&logocolor=white)](https://github.com/joisaac/cheatsheets/blob/main/.tmux.conf)<br/>
