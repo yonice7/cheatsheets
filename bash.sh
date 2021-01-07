@@ -91,10 +91,23 @@ tr -s        # Replace spaces
 -knum,num                 # Sort by column starting from num and ending in num
 -t $'\t' + more arguments # Sort every row
 -nrk2                     # Sort a row by number, descending and from column 2
+sort [file]               # Sort alphabetically
+sort -r [file]            # Sort reversing the order
+sort -k2 [file]           # Sort by the second field 
 
 # uniq
--c               # Counts repeated words
-wc -c [filename] # count how many words in file
+uniq [file]           # Removes the duplicates
+sort [file] | uniq    # Always run sort before uniq
+sort [file] | uniq -c # Sort first the uniq and list count
+sort [file] | uniq -d # Only show repeated lines
+-c                    # Counts repeated words
+
+# wc
+wc [filename]         # shows how many: lines, words, letters the document have
+wc -l [filename]      # shows only how many lines
+wc -w [filename]      # shows only how many words
+wc -c [filename]      # shows only byte size 
+wc [DIRECTORY]        # shows information about the dir
 
 # paste
 paste -s     # From words divided by tabs in a column to words divided by spaces in a row
