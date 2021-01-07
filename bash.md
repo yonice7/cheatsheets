@@ -35,6 +35,20 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ```shell
 curl -L https://raw.githubusercontent.com/sbugzu/gruvbox-zsh/master/gruvbox.zsh-theme > ~/.oh-my-zsh/custom/themes/gruvbox.zsh-theme
 ```
+### Install exa
+```shell
+sudo apt install exa
+```
+Otherwise
+```shell
+wget -c https://github.com/ogham/exa/releases/download/v0.8.0/exa-linux-x86_64-0.8.0.zip
+unzip exa-linux-x86_64-0.8.0.zip
+sudo mv exa-linux-x86_64 /usr/local/bin/exa
+```
+```shell
+vim .zshrc
+alias ls="exa"
+```
 ## Fonts
 ```shell
 unzip Hack.zip -d ~/.fonts
