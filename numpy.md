@@ -20,7 +20,7 @@ $$c_ij = a_{i1} b_{1j} + a_{i2} b_{2j} + \dots + a_{in} b_{bj} = sum_{k = 1}^n a
 ## Differences
 ```python
 l = list(range(1,11))
-my_array = np.array(l) #transform list into a numpy array (ndarray)
+myarray = np.array(l) #transform list into a numpy array (ndarray)
 ```
 ## Range of numbers
 ```python
