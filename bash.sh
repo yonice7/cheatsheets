@@ -114,6 +114,17 @@ paste -s     # From words divided by tabs in a column to words divided by spaces
 paste - - -  # Divide the words in 3 columns
 paste -d, -s # Sets a comma as delimiter
 
+# diff
+diff [file1] [file2] # shows the difference line by line between the two files
+cmp [file1] [file2]  # shows the line where there is a difference 
+
+# tar, gzip, gunzip
+tar cvf name.tar [dir] # tar a bunch of files, dir, links 
+tar cvf name.tar .     # tar all
+tar xvf [file].tar     # untar a .tar file
+gzip [name.tar]        # make a tar file smaller size
+gzip -d [name.tar.gz]  # unzip a file
+
 # Statementes
 if condition; then echo output; elif condition; then echo output; else echo output; fi
 
