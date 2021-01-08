@@ -94,6 +94,10 @@ sudo apt update && sudo apt install telegram
 sudo apt install kdenlive
 ```
 
+### Pitivi
+```shell
+sudo apt install pitivi
+```
 ### Plank
 ```shell
 sudo apt install plank
