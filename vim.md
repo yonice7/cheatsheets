@@ -106,6 +106,10 @@ s:^vi\>:VIM:
 :%s/foo.*/&/g until the end of the line
 :%s/^$/\<br\/\>/g " replace empty line with brake
 :%s/\%>9l\%<21lword " replace from line number 9 to line number 21
+:5,12s/foo/bar/g " replace from line 5 to 12 inclusive
+:1,$d " Delete all lines
+:g/^$/d " Delete all empty lines
+:retab
 Ctrl + A increment a number
 ```
 ### Moving within the document 
