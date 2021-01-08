@@ -228,3 +228,17 @@ sudo vi app.desktop
 ```
 Change `Icon=image.png` for
 `Icon=/usr/share/icons/Flat-Remix-Blue-Dark/apps/scalable/app.svg`
+
+## Customize Discord
+### Install BetterDiscord
+```shell
+curl -O https://raw.githubusercontent.com/bb010g/betterdiscordctl/master/betterdiscordctl
+chmod +x betterdiscordctl
+sudo mv betterdiscordctl /usr/local/bin
+```
+### Add a theme
+```shell
+cd .config/BetterDiscord/themes/
+vim Duvbox.theme.css
+```
+I'm currently using [this](https://github.com/patrykf03/Discord-Gruvbox#Discord-Gruvbox) Gruvbox like theme for Discord
