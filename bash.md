@@ -235,6 +235,7 @@ Change `Icon=image.png` for
 curl -O https://raw.githubusercontent.com/bb010g/betterdiscordctl/master/betterdiscordctl
 chmod +x betterdiscordctl
 sudo mv betterdiscordctl /usr/local/bin
+betterdiscordctl install 
 ```
 ### Add a theme
 ```shell
