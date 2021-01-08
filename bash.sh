@@ -125,6 +125,32 @@ tar xvf [file].tar     # untar a .tar file
 gzip [name.tar]        # make a tar file smaller size
 gzip -d [name.tar.gz]  # unzip a file
 
+# sed
+   # Replaces a string in a file with a newstring
+   # Find and delete a line 
+   # Remove empty lines
+   # Remove the first or n lines in a file
+   # To replace tabs with spaces
+   # Show defined lines from a file
+   # Substitute within vi editor
+sed 's/Kenny/Lenny/g'    # Replace Kenny with Lenny
+sed -i 's/Kenny/Lenny/g' # Insert the changes in the file
+
+# sys admin
+su -                                                                        # we first need to be root
+useradd [newuser]                                                           # create a new user
+id [user]                                                                   # checks if user exists
+groupadd [newgroup]                                                         # create a new group
+userdel [user]                                                              # delete a user
+userdel -r [user]                                                           # delete a user and directories as well
+groupdel -r [group]                                                         # delete a user and directories as well
+usermod -g [group] [user]                                                   # add a user to a group
+cat /etc/group                                                              # check groups
+chgrp -r [oldname] [newname]                                                # change a group name
+useradd -g [group] -s /bin/zsh -c "Description" -m -d /home/name [username] # -g add to a group -s shell that we'll use -c description -d directory location
+passwd [username]                                                           # Create a password for this user
+su [user]                                                                   # Switch of user
+
 # Statementes
 if condition; then echo output; elif condition; then echo output; else echo output; fi
 
