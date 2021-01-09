@@ -136,21 +136,6 @@ gzip -d [name.tar.gz]  # unzip a file
 sed 's/Kenny/Lenny/g'    # Replace Kenny with Lenny
 sed -i 's/Kenny/Lenny/g' # Insert the changes in the file
 
-# sys admin
-su -                                                                        # we first need to be root
-useradd [newuser]                                                           # create a new user
-id [user]                                                                   # checks if user exists
-groupadd [newgroup]                                                         # create a new group
-userdel [user]                                                              # delete a user
-userdel -r [user]                                                           # delete a user and directories as well
-groupdel -r [group]                                                         # delete a user and directories as well
-usermod -g [group] [user]                                                   # add a user to a group
-cat /etc/group                                                              # check groups
-chgrp -r [oldname] [newname]                                                # change a group name
-useradd -g [group] -s /bin/zsh -c "Description" -m -d /home/name [username] # -g add to a group -s shell that we'll use -c description -d directory location
-passwd [username]                                                           # Create a password for this user
-su [user]                                                                   # Switch of user
-
 # Statementes
 if condition; then echo output; elif condition; then echo output; else echo output; fi
 
@@ -215,3 +200,24 @@ man [command]                               # help command 3
 command1 [arguments] | command2 [arguments] # Connect the output of one command directly to the input of another command
 rmdir [dir]                                 # remove a directory
 rm -rf [file] or [dir]                      # will forcefully remove subdirectories and its contents as well
+
+# sys admin
+su -                                                                        # we first need to be root
+useradd [newuser]                                                           # create a new user
+id [user]                                                                   # checks if user exists
+groupadd [newgroup]                                                         # create a new group
+userdel [user]                                                              # delete a user
+userdel -r [user]                                                           # delete a user and directories as well
+groupdel -r [group]                                                         # delete a user and directories as well
+usermod -g [group] [user]                                                   # add a user to a group
+cat /etc/group                                                              # check groups
+chgrp -r [oldname] [newname]                                                # change a group name
+useradd -g [group] -s /bin/zsh -c "Description" -m -d /home/name [username] # -g add to a group -s shell that we'll use -c description -d directory location
+passwd [username]                                                           # Create a password for this user
+su [user]                                                                   # Switch of user
+
+# Monitor users
+who           # How many people are logged in
+last          # Shows all the times a user has logged in
+finger        #  
+id [username] # Get info about a user
