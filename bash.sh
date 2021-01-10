@@ -221,3 +221,7 @@ who           # How many people are logged in
 last          # Shows all the times a user has logged in
 finger        #  
 id [username] # Get info about a user
+
+# Talking to users
+wall             # Write the message and when finish press C-d, it'll be broadcasted to all users
+write [username] # Write to an specific user then C-d, root sends the messages
