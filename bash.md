@@ -96,7 +96,12 @@ sudo apt install kdenlive
 
 ### Pitivi
 ```shell
-sudo apt install pitivi
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak install flathub org.pitivi.Pitivi
+```
+#### Update
+```shell
+flatpak update org.pitivi.Pitivi
 ```
 ### Plank
 ```shell
