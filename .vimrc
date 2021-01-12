@@ -38,7 +38,7 @@ set expandtab
 set noshiftround
 
 " Display 5 lines above/below the cursor when scrolling with a mouse.
-set scrolloff=5
+set scrolloff=8
 " Fixes common backspace problems
 set backspace=indent,eol,start
 
@@ -101,6 +101,11 @@ set shortmess+=c
 set completeopt=noinsert,noselect,menuone
 " Recently vim can merge signcolumn and number column into one
 set signcolumn=yes
+
+" No highlight search
+set nohlsearch
+" No swap file
+set noswapfile
 
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
