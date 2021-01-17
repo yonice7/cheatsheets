@@ -119,11 +119,13 @@ diff [file1] [file2] # shows the difference line by line between the two files
 cmp [file1] [file2]  # shows the line where there is a difference 
 
 # tar, gzip, gunzip
-tar cvf name.tar [dir] # tar a bunch of files, dir, links 
-tar cvf name.tar .     # tar all
-tar xvf [file].tar     # untar a .tar file
-gzip [name.tar]        # make a tar file smaller size
-gzip -d [name.tar.gz]  # unzip a file
+tar cvf name.tar [dir]           # tar a bunch of files, dir, links 
+tar cvf name.tar .               # tar all
+tar xvf [file].tar               # untar a .tar file
+gzip [name.tar]                  # make a tar file smaller size
+gzip -d [name.tar.gz]            # unzip a file
+unzip -q [name].zip              # unzip a zip file
+unzip -q [name].zip -d /path/to/ # unzip to a different directory
 
 # sed
    # Replaces a string in a file with a newstring
