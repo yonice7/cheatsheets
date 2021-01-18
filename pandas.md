@@ -85,7 +85,7 @@ var.loc['LASTNAME, FNAME'].iloc[0]
 var.loc['LASTNAME, FNAME',['Column1','Column2']
 var.iloc[2] = 29 # changing one item's  value
 var.columns[column index number]
-var.columns.tolist()
+var.columns.tolist() # Past values into a list
 var.index.get_loc('LNAME, FNAME') # Gets index location
 var.colums = ['New Name1','New Name2',...,'New Name(n)'] # Changing columns names
 var.index.name = 'New Index Name' # Changing index name
@@ -95,6 +95,7 @@ var[var.column == 'value_we_want'] ex. male or female # Sorting from a value
 var.loc[var.column == 'value_we_want'] Better way to do it
 var.loc[var.column.between(range,range, inclusive = True)
 var.loc[var.column.isin(num1,num2)]
+var.loc[var.column.isin(df.column)] # Slice a df with another dataframe
 var.duplicate(subset = "column") # Find duplicates
 
 ~ # This symbol means de opposite
@@ -107,4 +108,8 @@ var.loc[var1 | var2]
 ## Copying
 ```python
 new_var = var.colum.copy()
+```
+## Dataframe
+```python
+df["new_column_name"] = data # Add a new column
 ```
