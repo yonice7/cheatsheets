@@ -97,8 +97,9 @@ var.loc[var.column.between(range,range, inclusive = True)
 var.loc[var.column.isin(num1,num2)]
 var.loc[var.column.isin(df.column)] # Slice a df with another dataframe
 var.duplicate(subset = "column") # Find duplicates
-
+df[(var.ticker == 'AXP') & (var.per_cal_qtr == 1) & (var['per_cal_year'] == 2021)] # Slicing by more than one column
 ~ # This symbol means de opposite
+& | # and & or
 (var1 & var2) # Previously created var1 = var.column == 'val'
 var.loc[var1 & var2] # filtering data with several variables
 var1 | var2) # means or
