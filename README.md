@@ -17,7 +17,7 @@ repository.
 [![zsh](https://img.shields.io/badge/my_zshrc-000000?&style=for-the-badge&logo=gnu-bash&logocolor=white)](https://github.com/joisaac/cheatsheets/commit/bcae1b35908ccfcf301eb3c4bd373eb034447870)<br/>
 [![tmuxconf](https://img.shields.io/badge/tmux_style-000000?&style=for-the-badge&logo=powershell&logocolor=white)](https://github.com/joisaac/cheatsheets/blob/main/.tmux.conf)<br/>
 [![conkyrc](https://img.shields.io/badge/conkyrc-000000?&style=for-the-badge&logo=c&logocolor=white)](https://github.com/joisaac/cheatsheets/blob/main/.conkyrc)<br/>
-[![git](https://img.shields.io/badge/git_cheatsheet-181717?&style=for-the-badge&logo=git&logocolor=white)](https://github.com/joisaac/cheatsheets/blob/main/git.md)
+[![git](https://img.shields.io/badge/git_cheatsheet-F05032?&style=for-the-badge&logo=git&logocolor=white)](https://github.com/joisaac/cheatsheets/blob/main/git.md)
 ## SQL
 [![sqlcheatsheet](https://img.shields.io/badge/sql_cheatsheet-336791?&style=for-the-badge&logo=postgresql&logocolor=white)](https://github.com/joisaac/cheatsheets/blob/main/sql.md)<br/>
 [![pgcli](https://img.shields.io/badge/pgcli_config-000000?&style=for-the-badge&logo=postgresql&logocolor=white)](https://github.com/joisaac/cheatsheets/blob/main/config)
