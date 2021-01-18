@@ -47,6 +47,12 @@ var.column.corr(var.column) # specific correlation from two columns
 .method(bins = 5 # Returns statiscal ranges)
 .method(inplace = True # Save the change)
 ```
+## Built-in functions
+```python
+type(dataframe) # Shows the type
+round(dataframe,0) # Round every number in the dataframe to a number of decimals
+len(dataframe) # Shows how many rows we've got
+```
 ## Attributes
 ```python
 .columns
@@ -64,13 +70,16 @@ round(var) # round numbers
 ## Indexing and Slicing
 ```python
 var.reset_index(inplace = True)
-var.set_index('Column', inplace = True)
+var.set_index('Column', inplace = True) # Change index column
 var.index = var_index # var_index is a previously created list
 var['column'] # returns only data from that column
 var[['column']] # same but better display
 var[['column1','column2']] # This is a list
 var.column # returns data from that column, different method
 var.iloc[0] # The best way to select rows
+var.iloc[200:250] # Select a range of rows
+var.iloc[[2,5,200]] # Select a list of rows
+var.iloc[row, column] # Select a row and a specific column
 var.loc['DRIVAS, Dimitrios'] # Selecting specific data
 var.loc['LASTNAME, FNAME'].iloc[0]
 var.loc['LASTNAME, FNAME',['Column1','Column2']
@@ -86,6 +95,7 @@ var[var.column == 'value_we_want'] ex. male or female # Sorting from a value
 var.loc[var.column == 'value_we_want'] Better way to do it
 var.loc[var.column.between(range,range, inclusive = True)
 var.loc[var.column.isin(num1,num2)]
+var.duplicate(subset = "column") # Find duplicates
 
 ~ # This symbol means de opposite
 (var1 & var2) # Previously created var1 = var.column == 'val'
