@@ -252,3 +252,15 @@ cd .config/BetterDiscord/themes/
 vim Duvbox.theme.css
 ```
 I'm currently using [this](https://github.com/patrykf03/Discord-Gruvbox#Discord-Gruvbox) Gruvbox like theme for Discord
+
+## Install Pinyin
+```
+Language Support
+Install/Remove Languages
+Chinese Simplified
+sudo reboot
+https://pinyin.sogou.com/linux/
+Download for Ubuntu 64-bit
+sudo dpkg -i sogoupinyin_版本号_amd64.deb
+sudo apt -f install
+sudo apt-get remove fcitx-ui-qimpanel
