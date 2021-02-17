@@ -238,6 +238,11 @@ sudo vi app.desktop
 Change `Icon=image.png` for
 `Icon=/usr/share/icons/Flat-Remix-Blue-Dark/apps/scalable/app.svg`
 
+### Slack
+```shell
+sudo apt install slack-desktop
+```
+
 ## Customize Discord
 ### Install BetterDiscord
 ```shell
