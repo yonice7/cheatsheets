@@ -243,6 +243,13 @@ Change `Icon=image.png` for
 sudo apt install slack-desktop
 ```
 
+### F.lux
+Download this [package](https://launchpad.net/~nathan-renniewaldock/+archive/ubuntu/flux/+files/fluxgui_1.2.0~pre~20190501-g0548b6f-1~eoan_all.deb)
+```shell
+sudo dpkg -i fluxgui_1.2.0 ~ pre ~ 20190501-g0548b6f-1 ~ eoan_all.deb
+sudo apt-get install fluxgui
+```
+
 ## Customize Discord
 ### Install BetterDiscord
 ```shell
