@@ -357,3 +357,9 @@ endif
 " Markdown Configuration
 let g:vim_markdown_math = 1 "Math Latex Support
 let g:vim_markdown_folding_style_pythonic = 1 "Folding style pythonic
+
+" Fugitive
+command! -bang -bar -nargs=* Gpush execute 'Dispatch<bang> -dir=' .
+      \ fnameescape(FugitiveGitDir()) 'git push' <q-args>
+command! -bang -bar -nargs=* Gfetch execute 'Dispatch<bang> -dir=' .
+      \ fnameescape(FugitiveGitDir()) 'git fetch' <q-args>
