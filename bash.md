@@ -250,6 +250,11 @@ sudo dpkg -i fluxgui_1.2.0 ~ pre ~ 20190501-g0548b6f-1 ~ eoan_all.deb
 sudo apt-get install fluxgui
 ```
 
+### Signal
+```shell
+sudo apt install signal-desktop
+```
+
 ## Customize Discord
 ### Install BetterDiscord
 ```shell
