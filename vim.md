@@ -60,7 +60,7 @@ Ctrl+o " go back with cursor
 /word " look for word, then n to go to the next, N back
 n " Find the next one
 ?word " last word that matches
-% parenthesis match
+% "parenthesis match
 Ctrl+G " Location
 G " last line
 gg first line
