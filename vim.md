@@ -62,8 +62,6 @@ n " Find the next one
 ?word " last word that matches
 % "parenthesis match
 Ctrl+G " Location
-G " last line
-gg first line
 numG go to that line number
 ```
 ### Saving
