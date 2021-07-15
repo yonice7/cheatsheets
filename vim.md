@@ -62,7 +62,7 @@ n " Find the next one
 ?word " last word that matches
 % "parenthesis match
 Ctrl+G " Location
-numG go to that line number
+numG "go to that line number
 ```
 ### Saving
 ```vim
