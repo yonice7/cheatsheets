@@ -95,12 +95,12 @@ CTRL-a "Increment a number
 #### better way
 ```vim
 s:\<vi\>:VIM:g
-^ Beginning of the line
-$ End of the line
+^ "Beginning of the line
+$ "End of the line
 s:^vi\>:VIM:
 :%s/foo/bar/g
 :%s/foo/(&)/g
-& replace with the same word and parenthesis
+& " replace with the same word and parenthesis
 :%s/foo.*/&/g until the end of the line
 :%s/^$/\<br\/\>/g " replace empty line with brake
 :%s/\%>9l\%<21lword " replace from line number 9 to line number 21
@@ -108,7 +108,7 @@ s:^vi\>:VIM:
 :1,$d " Delete all lines
 :g/^$/d " Delete all empty lines
 :retab
-Ctrl + A increment a number
+Ctrl + A " increment a number
 ```
 ### Moving within the document 
 ```vim
@@ -116,7 +116,6 @@ Ctrl + A increment a number
 g CTRL-g " Count document words
 
 ### Terminal
-```vim 
 :vert ter
 Ctrl-W "switch from the terminal to the next window
 ```
