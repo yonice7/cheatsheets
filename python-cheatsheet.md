@@ -186,7 +186,7 @@ sam.attribute # This is how we call
 #### Solution to an exercise
 1. Create an input as rawLst
 2. Create a list
-3. Transforma list into an array
+3. Transform a list into an array
 4. Append to the list as a number
 5. Return a string with replace
 
