@@ -4,7 +4,7 @@ l.append() # Adds an item
 l.count() # Count how many times in the list
 l.extend() # With append you got a list inside another one, extend only adds elements
 l.index() # Return the index of the argument
-l.insert(index, object) # appends and object at index
+l.insert(index, object) # appends an object at index
 l.pop() # Pop the last element of the last by default, we can pass in an index
 l.remove() # Remove the first ocurrence of a value
 l.reverse() # Reverses the index
