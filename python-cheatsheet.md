@@ -178,7 +178,7 @@ M: object.method()
 	object.method()	 
 
 #### Instance
-```pythpn
+```python
 sam = Class(attribute='Lab') # Creating an instance
 sam.attribute # This is how we call
 ```
