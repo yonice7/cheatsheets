@@ -227,3 +227,12 @@ id [username] # Get info about a user
 # Talking to users
 wall             # Write the message and when finish press C-d, it'll be broadcasted to all users
 write [username] # Write to an specific user then C-d, root sends the messages
+
+# wget
+wget -mkEpnp webpage-url
+-m            # Turns on options suitable for mirroring. This option turns on recursion and time-stamping, sets infinite recursion depth and keeps FTP directory listings. It is currently equivalent to
+-k            # Converts links for offline viewing.
+-E            # Adds proper filename extensions to downloaded files.
+-n            # Downloads images, sounds, stylesheets, and other required files for proper offline site rendering.
+-np           # Prevents retrieval of the parent directory. Guarantees that only files below a certain hierarchy will be downloaded
+-e robots=off # causes it to ignore robots.txt for that domain
