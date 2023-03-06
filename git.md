@@ -1,3 +1,11 @@
+## Git setup
+```shel
+git config --global user.name "John Doe"
+git config --global user.email <use.nonrepley.email>
+git config --global core.editor vim
+git config --global --add --bool push.autoSetupRemote true
+```
+
 ## Basic Commands
 ```shell
 git init # starts git in the location we're at
@@ -17,6 +25,7 @@ git branch -M main
 git remote -v # Show the associated remote repositories and their stored name, like
 git remote add origin <url> # Add a remote so you can collaborate with others on a newly initialized repository 
 git push -u origin master # When pushing a branch for the first time, this type of push will configure the relationship between the remote and your local repository so that you can use git pull and git push with no additional options in the future.
+git commit --amend --reset-author
 ```
 ## Branches
 ```shell
