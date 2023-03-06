@@ -1,7 +1,7 @@
 ## Git setup
 ```shel
 git config --global user.name "John Doe"
-git config --global user.email <use.nonrepley.email>
+git config --global user.email <use.nonreply.email>
 git config --global core.editor vim
 git config --global --add --bool push.autoSetupRemote true
 ```
