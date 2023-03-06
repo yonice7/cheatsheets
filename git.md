@@ -1,6 +1,6 @@
 ## Git setup
-```shel
 [Git/Github on vscode](https://learn.microsoft.com/en-us/training/modules/introduction-to-github-visual-studio-code/3-exercise-authentication)
+```shel
 git config --global user.name "John Doe"
 git config --global user.email <use.nonreply.email>
 git config --global core.editor vim
